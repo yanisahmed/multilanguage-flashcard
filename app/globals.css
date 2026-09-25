@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+::selection {
+  background: #C9A24B55;
+}
+
+.card {
+  @apply rounded-card border border-line bg-white/70 shadow-[0_1px_0_0_#00000008];
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-card px-4 py-2.5 text-sm font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply btn bg-moss text-parchment hover:bg-moss2;
+}
+
+.btn-outline {
+  @apply btn border border-line bg-white text-ink hover:border-moss;
+}
